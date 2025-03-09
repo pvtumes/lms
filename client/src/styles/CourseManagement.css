@@ -1,0 +1,226 @@
+/* CourseManagement.css */
+
+/* Container for the entire course management section */
+.courses-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mentor Dashboard Name */
+.mentor-dashboard-name {
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Top Section (Search Bar and Domain Filter) */
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  flex: 1;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Domain Filter Dropdown */
+.domain-filter select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.domain-filter select:hover {
+  border-color: #888;
+}
+
+/* Add Course Button */
+.add-course-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-course-button:hover {
+  background-color: #45a049;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Course Card */
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.course-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Admin Actions (Edit and Delete Buttons) */
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-content button:last-child {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.modal-content button:last-child:hover {
+  background-color: #5a6268;
+}
+
+.modal-content button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.modal-content button:first-child:hover {
+  background-color: #45a049;
+}/* CourseManagement.css */
+
+/* Back to Dashboard Button */
+.back-to-dashboard {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}

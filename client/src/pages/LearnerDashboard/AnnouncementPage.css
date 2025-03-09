@@ -1,0 +1,66 @@
+.announcements-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.no-announcements {
+    font-size: 18px;
+    color: #777;
+}
+
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.announcement-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.announcement-card:hover {
+    transform: scale(1.02);
+}
+
+.announcement-card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.announcement-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.priority {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Priority-based styling */
+.low {
+    border-left: 5px solid #2ecc71;
+}
+
+.medium {
+    border-left: 5px solid #f39c12;
+}
+
+.high {
+    border-left: 5px solid #e74c3c;
+}

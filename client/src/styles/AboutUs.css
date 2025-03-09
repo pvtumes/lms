@@ -1,0 +1,102 @@
+/* AboutUs.css */
+.about-us-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.back-to-home-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-to-home-btn:hover {
+  color: #2980b9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+
+}
+
+.team-card-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.team-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  color: #240a0a;
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-overlay h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image-overlay p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.team-card-content {
+  padding: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #2980b9;
+}

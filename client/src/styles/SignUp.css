@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3F2FD; /* Light sky blue for light mode */
+}
+
+/* Light Mode Background */
+.light-mode {
+  background-color: #E3F2FD !important; /* Light sky blue */
+}
+
+/* Dark Mode Background */
+.dark-mode {
+  background-color: #276570; /* Deep teal color */
+}
+
+/* Form Container */
+.form-container {
+  width: 400px;
+  background: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333333; /* Dark neutral text */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* Form Elements */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #555555; /* Medium gray for labels */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-group input,
+.form-group select {
+  width: 90%; /* Same width for all fields */
+  padding: 12px 16px; /* Same padding */
+  border-radius: 6px; /* Same border radius */
+  color: #333333; /* Same text color */
+  background-color: #f9f9f9; /* Same background color */
+  border: 1px solid #e0e0e0; /* Same border */
+  font-size: 14px; /* Same font size */
+  transition: border-color 0.3s ease; /* Same transition */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3AAFA9; /* Same focus border color */
+  background-color: #ffffff; /* Same focus background color */
+}
+
+/* Role Dropdown */
+.role-dropdown {
+  appearance: none; /* Remove default arrow */
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  width: 90%; /* Same width */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.form-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  color: #ffffff; /* White text */
+  font-weight: 600;
+  width: 90%; /* Same width */
+  background: #3AAFA9; /* Teal background */
+  border: none;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+  background-color: #2b8f85; /* Slightly darker teal on hover */
+}
+
+/* Link */
+.link {
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+}
+
+.link a {
+  color: #3AAFA9; /* Teal color for link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #276570; /* Dark mode color */
+  transition: transform 0.3s ease;
+}
+
+.light-mode .dark-mode-toggle {
+  color: #3AAFA9; /* Visible in light mode */
+}

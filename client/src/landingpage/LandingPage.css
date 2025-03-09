@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1d1d42, #4b0082);
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background: #222;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#home span {
+    color: #00ff00;
+    font-weight: 700;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.get-started {
+    background: black;
+    color: white;
+}
+
+.learn-more {
+    background: #00ff00;
+    color: black;
+}
+
+/* Section Wrappers */
+#features,
+#benefits,
+#testimonials,
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}

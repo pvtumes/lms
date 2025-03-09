@@ -1,0 +1,123 @@
+/* Feed.css */
+
+.mentor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2,
+h3 {
+    color: #333;
+}
+
+.feed-name-input {
+    margin-bottom: 20px;
+}
+
+.feed-name-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.question-input {
+    margin-bottom: 20px;
+}
+
+.question-input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.question-input button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-input button:hover {
+    background-color: #45a049;
+}
+
+.questions-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.questions-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions-list li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.questions-list li button:hover {
+    background-color: #e0a800;
+}
+
+.student-feedback-form {
+    margin-top: 20px;
+}
+
+.feedback-question {
+    margin-bottom: 15px;
+}
+
+.feedback-question label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-question select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-responses {
+    margin-top: 20px;
+}
+
+.response-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.response-item h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.response-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.response-item li {
+    margin-bottom: 5px;
+}

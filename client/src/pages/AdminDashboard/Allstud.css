@@ -1,0 +1,93 @@
+/* Overall Container */
+.all-student-container {
+    padding: 40px;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* No students message */
+.no-students-message {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Student list container */
+.student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Each student card */
+.student-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header: Name and Roll Number */
+.student-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.student-card-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.student-rollNo {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* Email styling */
+.student-email {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.student-email strong {
+    font-weight: 600;
+}
+
+/* Loading and error messages */
+.loading-container {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e74c3c;
+}

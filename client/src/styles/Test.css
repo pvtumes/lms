@@ -1,0 +1,115 @@
+.assessment-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .question-input, .option-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .question-list, .option-list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .question-list li, .option-list li {
+    background: #fff;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #007bff;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  .feedback {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .created-assessments {
+    margin-top: 20px;
+  }
+  
+  .assessment-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .assessment-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .assessment-item button:hover {
+    background-color: #ff1a1a;
+  }

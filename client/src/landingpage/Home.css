@@ -1,0 +1,203 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Container (Outer Container) */
+.hero-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #11172a, #a78bfa);
+    /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    /* Set default text color to white */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for hero container */
+.hero-container:hover {
+    transform: scale(1.02);
+    /* Slightly increase size on hover */
+}
+
+/* Inner Container */
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    border-radius: 15px;
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 80%;
+    /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+    /* Continuous floating animation */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for images */
+.hero-image:hover {
+    animation: float 1s ease-in-out infinite;
+    /* Faster floating on hover */
+}
+
+/* Content Container */
+.content-container {
+    flex: 2;
+    text-align: center;
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for content container */
+.hero-container:hover .content-container {
+    transform: scale(1.05);
+    /* Slightly increase text size on hover */
+}
+
+.content-container h1 {
+    font-size: 1rem;
+    color: white;
+    /* White text */
+    margin-bottom: 10px;
+    font-family: "po";
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    color: white;
+    /* White text */
+    margin-bottom: 15px;
+}
+
+.content-container h2 .automated {
+    color: #00ff08;
+    font-size: 3rem;
+    /* Green color for "Automated" */
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    color: white;
+    /* White text */
+    margin-bottom: 20px;
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #000000;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #8c6fd9;
+}
+
+
+.secondary-button {
+    background-color: #4caf50;
+    /* Green background for "Contact us" */
+    color: white;
+    /* border: 1px solid #4caf50; */
+    /* Green border */
+}
+
+.secondary-button:hover {
+    background-color: #8c6fd9;
+    /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inner-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-container {
+        margin: 10px 0;
+    }
+
+    .hero-image {
+        max-width: 60%;
+        /* Adjust image size for smaller screens */
+    }
+
+    .content-container {
+        padding: 0;
+    }
+
+    .content-container h1 {
+        font-size: 2rem;
+    }
+
+    .content-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-container p {
+        font-size: 1rem;
+    }
+}
+
+.H1tag {
+    font-size: 10px;
+}

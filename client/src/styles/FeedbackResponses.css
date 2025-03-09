@@ -1,0 +1,68 @@
+/* FeedbackResponses.css */
+
+.responses-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responses-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .responses-container p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .responses-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .response-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .response-item h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .response-item p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .response-item ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .response-item ul li {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .response-item ul li strong {
+    color: #333;
+    font-weight: bold;
+  }

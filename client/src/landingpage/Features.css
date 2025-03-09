@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.efficence-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Scroll Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.card {
+    background: #111;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    /* Slightly bigger */
+    height: 420px;
+    /* Slightly taller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Hidden initially */
+    transform: translateY(50px);
+    transition: transform 0.5s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+
+    /* Textured half background */
+    background: linear-gradient(to bottom, #aaa 50%, #111 50%);
+}
+
+/* When cards come into view */
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(170, 255, 0, 0.5);
+}
+
+/* Icon Animation */
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Bounce Effect on Hover */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.card:hover .icon {
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+/* Text Styles */
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.efficence-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.highlight-text {
+    color: #aaff00;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+
+.card {
+    position: relative;
+    /* Needed for pseudo-element */
+    background: #111;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(50px);
+    transition: transform 0.5s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+}
+
+/* Adding Texture Effect to Top Half */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* Covers only the top half */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 25%);
+    background-size: 10px 10px;
+    /* Controls dot size */
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Ensuring Text & Content Appear Above Texture */
+.card>* {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(170, 255, 0, 0.5);
+}
