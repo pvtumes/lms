@@ -21,7 +21,7 @@ const assessmentRoutes = require("./routes/Assessment");
 const Admin = require("./model/Admin");
 
 mongoose
-  .connect(" ", {
+  .connect("mongodb+srv://Atharva:Atharva%402004@cluster0.pru0w.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -73,7 +73,7 @@ app.post("/create-checkout-session", async (req, res) => {
 });
 
 // Cohere API route for chat functionality
-const COHERE_API_KEY = " ";
+const COHERE_API_KEY = "rI8PURz0a6JliOwgrLiILRJNHdNgXlFQzZfrShhi";
 app.post("/chat", async (req, res) => {
   const { query } = req.body;
 
