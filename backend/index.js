@@ -11,8 +11,6 @@ const courseRoutes = require("./routes/CourseRoutes");
 const feedbackRoutes = require("./routes/FeedBack");
 const eventRoute = require("./routes/EventRoute");
 
-
-
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: "http://localhost:3000", credentials: true }));
@@ -21,7 +19,7 @@ const assessmentRoutes = require("./routes/Assessment");
 const Admin = require("./model/Admin");
 
 mongoose
-  .connect("mongodb+srv://Atharva:Atharva%402004@cluster0.pru0w.mongodb.net/", {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -73,7 +71,7 @@ app.post("/create-checkout-session", async (req, res) => {
 });
 
 // Cohere API route for chat functionality
-const COHERE_API_KEY = "rI8PURz0a6JliOwgrLiILRJNHdNgXlFQzZfrShhi";
+const COHERE_API_KEY = process.env.COHERE_API_KEY;
 app.post("/chat", async (req, res) => {
   const { query } = req.body;
 
