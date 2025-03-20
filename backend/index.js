@@ -19,7 +19,7 @@ const assessmentRoutes = require("./routes/Assessment");
 const Admin = require("./model/Admin");
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb+srv://Atharva:Atharva%402004@cluster0.pru0w.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
