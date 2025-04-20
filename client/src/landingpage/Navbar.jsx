@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Logo - Left Side */}
         <div className="logo">
           <img src={Logo} alt="Logo" />
-          <span className="title">Connectify</span>
+          <span className="title">Learning Management System</span>
         </div>
 
         {/* Navigation Links - Centered */}

@@ -33,7 +33,7 @@ const Features = () => {
           <img src={img4} alt="Personalized Learning" className="icon" />
           <h3>Personalized Learning</h3>
           <p>
-            Connectify tailors content to your learning needs, helping you stay
+            LMS tailors content to your learning needs, helping you stay
             ahead in your career.
           </p>
         </div>
